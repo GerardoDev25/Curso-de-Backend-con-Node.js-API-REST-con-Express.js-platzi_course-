@@ -1,0 +1,29 @@
+{
+  "name": "code-base",
+  "version": "0.0.1",
+  "description": "Curso de Backend con Node.js: API REST con Express.js(curso de platzi)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GerardoDev25/Curso-de-Backend-con-Node.js-API-REST-con-Express.js-platzi_course-.git"
+  },
+  "scripts": {
+    "dev": " node node_modules/.bin/nodemon index.js",
+    "start": "node index.js",
+    "lint": "eslint"
+  },
+  "keywords": [],
+  "author": "Gerardo Miranda <gerardodev25@gmail.com> (https://github.com/GerardoDev25)",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2"
+  },
+  "bugs": {
+    "url": "https://github.com/GerardoDev25/Curso-de-Backend-con-Node.js-API-REST-con-Express.js-platzi_course-/issues"
+  },
+  "homepage": "https://github.com/GerardoDev25/Curso-de-Backend-con-Node.js-API-REST-con-Express.js-platzi_course-#readme"
+}
