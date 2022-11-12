@@ -22,6 +22,10 @@
     "nodemon": "^2.0.12",
     "prettier": "^2.3.2"
   },
+  "dependencies": {
+    "express": "^4.17.1",
+    "faker": "^5.5.3"
+  },
   "bugs": {
     "url": "https://github.com/GerardoDev25/Curso-de-Backend-con-Node.js-API-REST-con-Express.js-platzi_course-/issues"
   },
