@@ -7,12 +7,11 @@ router.get('/', (req, res) => {
   if (limit && offset) {
     res.json({
       limit,
-      offset
+      offset,
     });
   } else {
     res.send('No hay parametros');
   }
 });
-
 
 module.exports = router;
