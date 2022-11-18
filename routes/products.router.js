@@ -16,24 +16,28 @@ router.get('/filter', (req, res) => {
 router.get('/:id', (req, res) => {
   const { id } = req.params;
   const product = service.findOne(id);
-  
+
   res.json({ product });
 });
 
 router.post('/', (req, res) => {
-  const body = req.body;
-  res.status(201).json({ message: 'created', data: body });
+  const { body } = req;
+
+  const newProduct = service.create(body);
+  res.status(201).json(newProduct);
 });
 
 router.patch('/:id', (req, res) => {
   const { id } = req.params;
-  const body = req.body;
-  res.json({ message: 'update', data: body, id });
+  const { body } = req;
+  const product = service.update(id, body);
+  res.json({ message: 'update', data: product });
 });
 
 router.delete('/:id', (req, res) => {
   const { id } = req.params;
-  res.json({ message: 'deleted', id });
+  const deleteId = service.delete(id);
+  res.json({ message: 'deleted', deleteId });
 });
 
 module.exports = router;
